@@ -1,0 +1,54 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jhont3-Portfolio</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section
+        id="topProyects"
+        class={`flex justify-between relative [&>div>img]:absolute 
+				[&>div>img]:bottom-o [&>div>img]:w-auto
+				[&>div>img]:top-[40%] 
+				h-screen pt-24 border-b border-white/10
+				`}
+      >
+        <div class="relative w-full">
+          <img
+            class="z-10 sm:left-[5%] md:left-[15%] h-[35%] bg-transparent rounded-full border-2 border-zinc-200-500"
+            src="./images/monst1.jpg"
+            alt="Easy Car"
+          />
+          <img
+            class="z-20 sm:left-[15%] md:left-[25%] h-[33%] bg-white rounded-full border-2 border-zinc-200-500 "
+            src="./images/easyCarHD.png"
+            alt="Easy Car"
+          />
+        </div>
+        <div class="relative w-full">
+          <img
+            class="z-0 sm:left-[25%] md:left-[35%] h-[35%] bg-transparent rounded-full border-2 border-zinc-200-500"
+            src="./images/monst2.jpg"
+            alt="Hairy Monster"
+          />
+          <img
+            class="z-10 sm:left-[15%] md:left-[25%] h-[33%] bg-white rounded-full border-2 border-zinc-200-500"
+            src="./images/hairyMonster.png"
+            alt="Hairy Monster"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: #131313;
+  }
+</style>

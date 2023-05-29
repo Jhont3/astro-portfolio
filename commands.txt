@@ -1,0 +1,5 @@
+npm create astro@latest
+cd portfolio
+pnpm install
+pnpm astro add tailwind
+pnpm install tailwindcss-animated -D
