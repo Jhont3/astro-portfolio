@@ -1,5 +1,12 @@
+COMANDS:
 npm create astro@latest
-cd portfolio
+cd <portfolio>
 pnpm install
 pnpm astro add tailwind
-pnpm install tailwindcss-animated -D
+pnpm install tailwindcss-animated -D <add in tailwind.config.cjs plugin>
+<add external fonts>
+
+Another links:
+https://hypercolor.dev/
+https://coolors.co/palettes/
+https://www.tailwindcss-animated.com/

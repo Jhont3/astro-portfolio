@@ -7,40 +7,92 @@
     <title>Jhont3-Portfolio</title>
   </head>
   <body>
-    <header></header>
+    <header class="relative">
+      <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-16 z-10">
+        <img 
+          class="w-32 md:w-44 lg:w-1/3 h-auto rounded-full mt-2 border-8 border-blue-1"
+          src="./images/dino.jpg" 
+          alt="Logo Jhont3 Dev"
+        >
+        <h1 class="font-boxing text-xl md:text-3xl text-center text-white font-bold p-2">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600 inline-block leading-relaxed">TOP PROJECTS</span>
+          <span class="text-yellow-1 inline-block">FullStack</span>
+        </h1>
+      </div>
+    </header>
 
     <main>
       <section
         id="topProyects"
         class={`flex justify-between relative [&>div>img]:absolute 
 				[&>div>img]:bottom-o [&>div>img]:w-auto
-				[&>div>img]:top-[40%] 
-				h-screen pt-24 border-b border-white/10
+				[&>div>img]:top-[40%] [&>div>img]:animate-ease-in-out [&>div>img]:animate-duration-1000
+				h-[70vh] md:h-screen pt-24 border-b border-white/10
 				`}
       >
+      <div 
+        class="absolute inset-0 "
+        id="gradient1"
+      ></div>
+      <div 
+        class="absolute inset-0 "
+        id="gradient2"
+      ></div>
+
+      </div>
         <div class="relative w-full">
           <img
-            class="z-10 sm:left-[5%] md:left-[15%] h-[35%] bg-transparent rounded-full border-2 border-zinc-200-500"
-            src="./images/monst1.jpg"
+            class="z-10 left-[10%] md:left-[15%] h-[25%] md:h-[45%] bg-transparent rounded-full animate-delay-500 animate-fade-right"
+            src="./images/fig1.png"
             alt="Easy Car"
           />
           <img
-            class="z-20 sm:left-[15%] md:left-[25%] h-[33%] bg-white rounded-full border-2 border-zinc-200-500 "
-            src="./images/easyCarHD.png"
+            class="z-20 left-[20%] md:left-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-1 animate-delay-1000 animate-fade-right"
+            src="./images/easyCarNB.png"  
             alt="Easy Car"
           />
         </div>
         <div class="relative w-full">
           <img
-            class="z-0 sm:left-[25%] md:left-[35%] h-[35%] bg-transparent rounded-full border-2 border-zinc-200-500"
-            src="./images/monst2.jpg"
+            class="z-0 right-[10%] md:right-[15%] h-[25%] md:h-[45%] bg-transparent rounded-full animate-delay-500 animate-fade-left"
+            src="./images/fig2.png"
             alt="Hairy Monster"
           />
           <img
-            class="z-10 sm:left-[15%] md:left-[25%] h-[33%] bg-white rounded-full border-2 border-zinc-200-500"
+            class="z-10 right-[20%] md:right-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-1 animate-delay-1000 animate-fade-left"
             src="./images/hairyMonster.png"
             alt="Hairy Monster"
           />
+        </div>
+        <div 
+          id="info"
+          class="absolute z-50 mx-auto left-1/2 -translate-x-1/2 bottom-8"
+        >
+          <div class="flex flex-col ">
+            <div class="px-3 pt-2 pb-1 bg-black text-white text-3xl text-center flex items-center gap-1">
+              <i class="fa-brands fa-github text-white text-xl hover:scale-105 inline-block"></i>
+              <h2 class="font-boxing p-2 inline-block hover:text-yellow-1 ">INFO</h2>
+              <i class="fa-brands fa-linkedin text-white text-xl hover:scale-105 inline-block"></i>
+            </div>
+            <div class="px-3 pt-1 pb-1 bg-white text-2xl text-black text-center">
+              <a 
+                class="font-boxing transition hover:contrast-150 hover:scale-105 inline-block hover:text-blue-1" 
+                href="https://github.com/Jhont3" 
+                target="_blank"
+                rel="noopener noreferrer">
+                BOXING RING
+              </a>
+            </div>
+            <div class="px-3 pt-2 pb-1 text-2xl bg-black text-white text-center">
+              <a 
+                class="font-boxing hover:contrast-200 hover:scale-105 transition inline-block hover:text-purple-300" 
+                href="https://www.linkedin.com/in/jhonatan-escobar-uribe/" 
+                target="_blank" rel="noopener noreferrer">
+                COACH
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
@@ -49,6 +101,48 @@
 
 <style is:global>
   body {
-    background-color: #131313;
+    background-color: #023047;
   }
+
+  @font-face {
+    font-family: 'Boxing';
+    src: url('/fonts/boxing.ttf');
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'Boxing Striped';
+    src: url('/fonts/boxing-striped.ttf');
+    font-weight: bold;
+  }
+
+  #gradient1 {
+    background: linear-gradient(70deg, rgb(10, 3, 15) 0%, rgb(64, 69, 149) 25%, rgb(10, 3, 15) 50%, rgb(64, 69, 149) 75%, rgb(10, 3, 15) 100%);
+    z-index: 0;
+    animation: Scroll 15s linear infinite;
+    background-size: 300% 200%;
+  }
+
+  @keyframes Scroll {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 33%; }
+  }
+
+  #gradient2 {
+      background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(208, 201, 203) 55%, rgb(70, 9, 144) 100%);
+      mix-blend-mode: color-dodge;
+  }
+  
 </style>
+<script>
+    const $topProyects = document.querySelector('#topProyects')
+    const $topProyectsImgs = $topProyects.querySelectorAll('img')
+
+    $topProyectsImgs.forEach($img => {
+      $img.addEventListener('mouseenter', () => {
+        // console.log('cosas');
+      })
+    })
+</script>
+
+<script src="https://kit.fontawesome.com/879d6c83a9.js" crossorigin="anonymous"></script>
