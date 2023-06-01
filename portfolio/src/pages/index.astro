@@ -1,67 +1,89 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/dino.jpg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Jhont3-Portfolio</title>
   </head>
   <body>
     <header class="relative">
-      <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-16 z-10">
+      <h1 class="absolute text-sky-100 text-3xl z-10 uppercase font-boxing w-full text-center p-[2.5%] ">
+        <span class="shadow-2xl">Jhonatan developer / best Project's</span>
+      </h1>
+      <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-20 z-10">
         <img 
-          class="w-32 md:w-44 lg:w-1/3 h-auto rounded-full mt-2 border-8 border-blue-1"
-          src="./images/dino.jpg" 
+          class="w-28 md:w-44 lg:w-[200px] h-auto rounded-es-3xl mt-2 border-4 border-black"
+          src="./images/me.jpg" 
           alt="Logo Jhont3 Dev"
         >
-        <h1 class="font-boxing text-xl md:text-3xl text-center text-white font-bold p-2">
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600 inline-block leading-relaxed">TOP PROJECTS</span>
-          <span class="text-yellow-1 inline-block">FullStack</span>
-        </h1>
+        <h2 class="font-boxing-striped text-xl md:text-3xl text-center text-white font-bold p-2 drop-shadow-2xl hover:scale-105">
+          <span class="text-white inline-block leading-relaxed ">CHOOSE ONE</span>
+          <span class="text-yellow-1 inline-block">!!!</span>
+        </h2>
       </div>
     </header>
 
     <main>
       <section
-        id="topProyects"
+        id="topProjects"
         class={`flex justify-between relative [&>div>img]:absolute 
 				[&>div>img]:bottom-o [&>div>img]:w-auto
 				[&>div>img]:top-[40%] [&>div>img]:animate-ease-in-out [&>div>img]:animate-duration-1000
-				h-[70vh] md:h-screen pt-24 border-b border-white/10
+				h-[90vh] md:h-screen pt-24
 				`}
       >
-      <div 
-        class="absolute inset-0 "
-        id="gradient1"
-      ></div>
-      <div 
-        class="absolute inset-0 "
-        id="gradient2"
-      ></div>
+        <div 
+          class="absolute inset-0"
+          id="gradient1"
+        ></div>
+        <div 
+          class="absolute inset-0"
+          id="gradient2"
+        ></div>
 
-      </div>
+        <div
+        class="absolute inset-0 flex gap-x-3 left-1/2 -translate-x-1/2 justify-center opacity-20 blur-sm"
+        >
+          <div
+            class="w-2 drop-shadow-lg h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-100 via-sky-300 to-sky-500"
+          >
+          </div>
+          <div
+            class="w-2 drop-shadow-lg h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-100 via-sky-300 to-sky-500"
+          >
+          </div>
+          <div
+            class="w-2 drop-shadow-lg h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-100 via-sky-300 to-sky-500"
+          >
+          </div>
+        </div>
+
+
         <div class="relative w-full">
           <img
             class="z-10 left-[10%] md:left-[15%] h-[25%] md:h-[45%] bg-transparent rounded-full animate-delay-500 animate-fade-right"
             src="./images/fig1.png"
-            alt="Easy Car"
+            alt="Richie"
           />
           <img
-            class="z-20 left-[20%] md:left-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-1 animate-delay-1000 animate-fade-right"
+            class="z-20 left-[20%] md:left-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-3 animate-delay-1000 animate-fade-right"
             src="./images/easyCarNB.png"  
             alt="Easy Car"
+            onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7045493245056819201/', '_blank');"
           />
         </div>
         <div class="relative w-full">
           <img
             class="z-0 right-[10%] md:right-[15%] h-[25%] md:h-[45%] bg-transparent rounded-full animate-delay-500 animate-fade-left"
             src="./images/fig2.png"
-            alt="Hairy Monster"
+            alt="Hector"
           />
           <img
-            class="z-10 right-[20%] md:right-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-1 animate-delay-1000 animate-fade-left"
+            class="z-10 right-[20%] md:right-[25%] h-[23%] md:h-[43%] bg-white rounded-full border-x-8 border-blue-3 animate-delay-1000 animate-fade-left"
             src="./images/hairyMonster.png"
             alt="Hairy Monster"
+            onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7067648066052337665/', '_blank');"
           />
         </div>
         <div 
@@ -69,12 +91,12 @@
           class="absolute z-50 mx-auto left-1/2 -translate-x-1/2 bottom-8"
         >
           <div class="flex flex-col ">
-            <div class="px-3 pt-2 pb-1 bg-black text-white text-3xl text-center flex items-center gap-1">
-              <i class="fa-brands fa-github text-white text-xl hover:scale-105 inline-block"></i>
-              <h2 class="font-boxing p-2 inline-block hover:text-yellow-1 ">INFO</h2>
-              <i class="fa-brands fa-linkedin text-white text-xl hover:scale-105 inline-block"></i>
+            <div class="md:px-3 md:pt-2 md:pb-1 bg-black text-white md:text-3xl text-center flex items-center gap-1">
+              <i class="fa-brands fa-github text-white md:text-xl hover:scale-105 inline-block"></i>
+              <h2 class="font-boxing md:p-2 inline-block hover:scale-105">INFO</h2>
+              <i class="fa-brands fa-linkedin text-white md:text-xl hover:scale-105 inline-block"></i>
             </div>
-            <div class="px-3 pt-1 pb-1 bg-white text-2xl text-black text-center">
+            <div class="md:px-3 md:pt-1 md:pb-1 bg-white md:text-2xl text-black text-center">
               <a 
                 class="font-boxing transition hover:contrast-150 hover:scale-105 inline-block hover:text-blue-1" 
                 href="https://github.com/Jhont3" 
@@ -83,7 +105,7 @@
                 BOXING RING
               </a>
             </div>
-            <div class="px-3 pt-2 pb-1 text-2xl bg-black text-white text-center">
+            <div class="md:px-3 md:pt-2 md:pb-1 md:text-2xl bg-black text-white text-center">
               <a 
                 class="font-boxing hover:contrast-200 hover:scale-105 transition inline-block hover:text-purple-300" 
                 href="https://www.linkedin.com/in/jhonatan-escobar-uribe/" 
@@ -92,7 +114,23 @@
               </a>
             </div>
           </div>
+        </div>
+        <div 
+          id="combat"
+          class="absolute z-50 mx-auto left-1/2 -translate-x-1/2 bottom-8 opacity-0 invisible"
+        >
+          <div class="md:px-5 md:pt-4 md:pb-2 bg-white text-black text-center">
+            <h3 class="font-boxing-striped uppercase md:text-3xl">-</h3>
+          </div>
 
+          <span class="left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-boxing text-yellow-1 md:text-3xl block absolute
+            [text-shadow:2px_2px_0px_red,4px_4px_0px_orange]
+          ">
+            VS
+          </span>
+          <div class="md:px-5 md:pt-4 md:pb-2 bg-black text-white text-center">
+            <h3 class="font-boxing-striped uppercase md:text-3xl">-</h3>
+          </div>
         </div>
       </section>
     </main>
@@ -117,7 +155,7 @@
   }
 
   #gradient1 {
-    background: linear-gradient(70deg, rgb(10, 3, 15) 0%, rgb(64, 69, 149) 25%, rgb(10, 3, 15) 50%, rgb(64, 69, 149) 75%, rgb(10, 3, 15) 100%);
+    background: linear-gradient(70deg, rgb(15, 0, 26) 0%, rgb(47, 51, 107) 25%, rgb(11, 3, 17) 50%, rgb(31, 34, 74) 75%, rgb(8, 14, 66) 100%);
     z-index: 0;
     animation: Scroll 15s linear infinite;
     background-size: 300% 200%;
@@ -129,18 +167,64 @@
   }
 
   #gradient2 {
-      background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(208, 201, 203) 55%, rgb(70, 9, 144) 100%);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(88, 94, 114) 55%, rgb(8, 23, 77) 100%);
       mix-blend-mode: color-dodge;
   }
   
 </style>
 <script>
-    const $topProyects = document.querySelector('#topProyects')
-    const $topProyectsImgs = $topProyects.querySelectorAll('img')
+    const $topProjs = document.querySelector('#topProjects')
+    const $ProjImgs = $topProjs.querySelectorAll('img')
 
-    $topProyectsImgs.forEach($img => {
+    const $info = document.querySelector('#info')
+    const $combat = document.querySelector('#combat')
+
+    $ProjImgs.forEach(($img) => {
+      $img.addEventListener("mouseleave", () => {
+        $ProjImgs.forEach($img => {
+          $img.setAttribute("style", "transition: all 0.3s ease-in-out");
+        });
+
+        $info.setAttribute("style", "opacity: 1; transition: all 0.3s ease-in-out; visibility: visible")
+        $combat.setAttribute("style", "opacity: 0; transition: all 0.3s ease-in-out")
+      });
+    });
+
+    $ProjImgs.forEach(($img) => {
       $img.addEventListener('mouseenter', () => {
         // console.log('cosas');
+        const sectionImages = $img.parentNode.children
+        const position = Array.from(sectionImages).indexOf($img)
+
+        const [leftProj, rightProj] = [
+          $ProjImgs[position],
+          $ProjImgs[position + $ProjImgs.length / 2],
+        ]
+
+        $info.setAttribute("style", "opacity: 0; transition: all 0.3s ease-in-out")
+        $combat.setAttribute("style", "opacity: 1; transition: all 0.3s ease-in-out; visibility: visible")
+
+        const [firstProjName, SecondProjName] = $combat.querySelectorAll('h3')
+        firstProjName.innerText = leftProj.alt
+        SecondProjName.innerText = rightProj.alt
+        
+        $ProjImgs.forEach($img => {
+          $img.setAttribute(
+            'style',
+            'filter: blur(2px) grayscale(.7); transition: all 0.3s ease-in-out'
+          )
+        })
+
+        leftProj.setAttribute(
+          'style',
+          'scale: 1.05; contrast: 1.1; transition: all 0.3s ease-in-out; z-index: 50'
+        )
+
+        rightProj.setAttribute(
+          'style',
+          'scale: 1.05; contrast: 1.1; transition: all 0.3s ease-in-out; z-index: 50'
+        )
+
       })
     })
 </script>
